@@ -5,3 +5,6 @@ pillow==10.2.0
 sqlparse==0.4.4
 typing_extensions==4.10.0
 sweetify
+djangorestframework
+django-filter
+markdown

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'accounts',
     'todo',
     'sweetify',
+    'rest_framework',
 ]
 
 
