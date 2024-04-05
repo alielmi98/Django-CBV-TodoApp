@@ -8,3 +8,4 @@ sweetify
 djangorestframework
 django-filter
 markdown
+drf-yasg[validation]

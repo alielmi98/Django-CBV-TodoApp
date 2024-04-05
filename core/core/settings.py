@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'todo',
     'sweetify',
     'rest_framework',
+    'drf_yasg',
 ]
 
 
