@@ -5,6 +5,7 @@ from django.urls import reverse_lazy
 from django.contrib.auth import login
 from django.shortcuts import redirect
 
+
 # Create your views here.
 
 
@@ -33,3 +34,7 @@ class RegisterPage(FormView):
         if self.request.user.is_authenticated:
             return redirect("task_list")
         return super(RegisterPage, self).get(*args, **kwargs)
+    
+
+
+             
