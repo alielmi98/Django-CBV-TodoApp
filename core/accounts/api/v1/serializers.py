@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from django.core import exceptions
-
+from ...models import Profile
 from django.contrib.auth.models import User
 from django.contrib.auth.password_validation import validate_password
 
@@ -43,5 +43,20 @@ class ChangePasswordSerializer(serializers.Serializer):
 
         return super().validate(attrs)
 
+class ProfileSerializer(serializers.ModelSerializer):
+    email = serializers.CharField(source="user.email", read_only=True)
+    user_id = serializers.CharField(source="user.id", read_only=True)
 
+
+    class Meta:
+        model = Profile
+        fields = (
+            "user_id",
+            "email",
+            "country",
+            "city",
+            "image",
+            "description",
+        )
+        read_only_fields = ["email"]
             

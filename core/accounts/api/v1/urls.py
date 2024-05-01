@@ -19,5 +19,7 @@ urlpatterns=[
     #login jwt
     path('jwt/create/', TokenObtainPairView.as_view(), name='jwt-create'),
     path('jwt/refresh/', TokenRefreshView.as_view(), name='jwt-refresh'),
+    #Profile
+    path("", views.ProfileApiView.as_view(), name="profile"),
     
 ]
