@@ -9,7 +9,7 @@ class Profile(models.Model):
     Profile class for each user which is being created to hold the information
     """
 
-    user = models.ForeignKey(User, on_delete=models.CASCADE,unique=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, unique=True)
     country = models.CharField(max_length=250)
     city = models.CharField(max_length=250)
     image = models.ImageField(blank=True, null=True)
