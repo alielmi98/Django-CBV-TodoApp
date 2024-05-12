@@ -13,7 +13,7 @@ drf-yasg[validation]
 djangorestframework-simplejwt
 djoser
 django-cors-headers
-sweetify
+
 
 # deployment module
 gunicorn

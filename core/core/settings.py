@@ -39,16 +39,11 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "accounts",
     "todo",
-    "sweetify",
     "rest_framework",
     "rest_framework.authtoken",
     "drf_yasg",
     "rest_framework_simplejwt",
 ]
-
-
-# possible options: 'sweetalert', 'sweetalert2' - default is 'sweetalert2'
-SWEETIFY_SWEETALERT_LIBRARY = "sweetalert2"
 
 
 MIDDLEWARE = [
